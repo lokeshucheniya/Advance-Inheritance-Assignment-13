@@ -1,4 +1,4 @@
-//Class MMBankFactory with necessary factory methods implemented
+//Class MMBankFactory inherits BankFactory
 public class MMBankFactory extends BankFactory {
 	
 	//Implementing getNewSavingAcc() of BankFactory class
