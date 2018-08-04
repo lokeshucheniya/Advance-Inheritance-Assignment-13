@@ -1,13 +1,14 @@
-//Class MMSavingAcc representing bank specific Savings Account
+//Class MMSavingAcc inheriting SavingAcc
 public class MMSavingAcc extends SavingAcc {
+	
 	//Parameterized constructor
 	public MMSavingAcc(int accNo, String accNm, float accBal, boolean isSalaried) {
 		super(accNo, accNm, accBal, isSalaried);
 	}
 	
 	@Override
-	public void withdraw(float amount) {  //Overriding withdraw method 
-		if(isSalaried()) {  //No minimum balance if salaried
+	public void withdraw(float amount) {  					//Overriding withdraw method 
+		if(isSalaried()) { 						//No minimum balance if salaried
 			if((getAccBal()-amount)>=0)
 				setAccBal(getAccBal()-amount);
 			else
